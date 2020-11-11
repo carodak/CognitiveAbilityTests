@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="Content-type" content="text/html; charset=UTF-8">
+  <link rel="stylesheet" href="style_qt3.css">
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.3.0/jquery.min.js"></script>
+  <script src="question_type3.js"></script>
+</head>
+
+<body>
+  <h1>Expérience</h1>
+
+  <div id="output"></div>
+  <div class="quiz-container">
+    <div id="quiz">
+    </div>
+  </div>
+
+  <div id="full-draw">
+    <canvas id="myCanvas" width="500" height="500"></canvas>
+    <br /><br />
+    <button onclick="javascript:clearArea();return false;">Effacer le trait</button>
+    Largeur de la ligne : <select id="selWidth">
+      <option value="1">1</option>
+      <option value="3">3</option>
+      <option value="5" selected="selected">5</option>
+      <option value="7">7</option>
+      <option value="9">9</option>
+      <option value="11">11</option>
+    </select>
+    Couleur : <select id="selColor">
+      <option value="black">noir</option>
+      <option value="blue" selected="selected">bleu</option>
+      <option value="red">rouge</option>
+      <option value="green">vert</option>
+      <option value="yellow">jaune</option>
+      <option value="gray">gris</option>
+    </select>
+  </div>
+  <div id="bottom-buttons">
+    <button id="next">Question Suivante</button>
+    <button id="nextQT" onclick="LastSlideSave()">Commencer la partie 4</button>
+  </div>
+  <div id="results"></div>
+
+</body>
+
+</html>

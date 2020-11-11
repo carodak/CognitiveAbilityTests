@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="Content-type" content="text/html; charset=UTF-8">
+  <link rel="stylesheet" href="style_qt5.css">
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.3.0/jquery.min.js"></script>
+  <script src="question_type5.js"></script>
+</head>
+
+<body>
+  <h1>Expérience</h1>
+
+  <div id="output">
+    <div class="quiz-container">
+      <div class="question" id="sub-title">
+        Partie 5 Test de mémoire de travail: Explications
+      </div> <p>Dans cette dernière partie, un ensemble de chiffres seront affichés à l'écran pendant un court laps de
+      temps. Vous devez les mémoriser dans l'ordre et les retranscrire dans le champs de saisie qui sera affiché. La
+      difficulté augmente à chacune de vos réponses.</p>
+    </div>
+  </div>
+
+  <div id="nbdigits">
+  </div>
+  <div id="conf-html">
+    <p> Si vous deviez noter votre niveau de confusion à la suite de cet exercice, vous diriez avoir été: </p>
+    <label>
+      Pas confus
+      <input type="radio" class="confRadio" name="radAnswer" value="0" id="conf0"
+        onclick="  ValidSelfConfusionReport()">
+    </label>
+    <label>
+      Légèrement confus
+      <input type="radio" class="confRadio" name="radAnswer" value="1" id="conf1"
+        onclick="  ValidSelfConfusionReport()">
+    </label>
+    <label>
+      Moyennement confus
+      <input type="radio" class="confRadio" name="radAnswer" value="2" id="conf2"
+        onclick="  ValidSelfConfusionReport()">
+    </label>
+    <label>
+      Très confus
+      <input type="radio" class="confRadio" name="radAnswer" value="3" id="conf3"
+        onclick="  ValidSelfConfusionReport()">
+    </label>
+  </div>
+
+  <div>
+    <button id="start">Voir la séquence de nombre à mémoriser</button>
+  </div>
+
+  <div id="alarmmsg"></div>
+
+  <input type="text" id="inputNbr">
+
+
+</body>
+
+</html>

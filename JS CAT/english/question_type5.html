@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="Content-type" content="text/html; charset=UTF-8">
+  <link rel="stylesheet" href="style_qt5.css">
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.3.0/jquery.min.js"></script>
+  <script src="question_type5.js"></script>
+</head>
+
+<body>
+  <h1>Experiment</h1>
+
+  <div id="output">
+    <div class="quiz-container">
+      <div class="question" id="sub-title">
+        Part 5 Working memory test: Explanations
+             </div> <p> In this last part, a set of numbers will be displayed on the screen for a short period of time.
+        You must memorize them in order and transcribe them in the input field that will be displayed. Difficulty increases with each of your answers. </p>
+    </div>
+  </div>
+
+  <div id="nbdigits">
+  </div>
+  <div id="conf-html">
+    <p> If you had to rate your level of confusion following this exercise, you would say that you were: </p>
+    <label>
+      Not confused
+      <input type="radio" class="confRadio" name="radAnswer" value="0" id="conf0"
+        onclick="  ValidSelfConfusionReport()">
+    </label>
+    <label>
+      Slightly confused
+      <input type="radio" class="confRadio" name="radAnswer" value="1" id="conf1"
+        onclick="  ValidSelfConfusionReport()">
+    </label>
+    <label>
+      Moderately confused
+      <input type="radio" class="confRadio" name="radAnswer" value="2" id="conf2"
+        onclick="  ValidSelfConfusionReport()">
+    </label>
+    <label>
+      Very confused
+      <input type="radio" class="confRadio" name="radAnswer" value="3" id="conf3"
+        onclick="  ValidSelfConfusionReport()">
+    </label>
+  </div>
+
+  <div>
+    <button id="start">See the number sequence to memorize</button>
+  </div>
+
+  <div id="alarmmsg"></div>
+
+  <input type="text" id="inputNbr">
+
+
+</body>
+
+</html>

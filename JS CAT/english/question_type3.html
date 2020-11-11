@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="Content-type" content="text/html; charset=UTF-8">
+  <link rel="stylesheet" href="style_qt3.css">
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.3.0/jquery.min.js"></script>
+  <script src="question_type3.js"></script>
+</head>
+
+<body>
+  <h1>Experiment</h1>
+
+  <div id="output"></div>
+  <div class="quiz-container">
+    <div id="quiz">
+    </div>
+  </div>
+
+  <div id="full-draw">
+    <canvas id="myCanvas" width="500" height="500"></canvas>
+    <br /><br />
+    <button onclick="javascript:clearArea();return false;">Erase the line</button>
+    Line width : <select id="selWidth">
+      <option value="1">1</option>
+      <option value="3">3</option>
+      <option value="5" selected="selected">5</option>
+      <option value="7">7</option>
+      <option value="9">9</option>
+      <option value="11">11</option>
+    </select>
+    Color : <select id="selColor">
+      <option value="black">black</option>
+      <option value="blue" selected="selected">blue</option>
+      <option value="red">red</option>
+      <option value="green">green</option>
+      <option value="yellow">yellow</option>
+      <option value="gray">grey</option>
+    </select>
+  </div>
+  <div id="bottom-buttons">
+    <button id="next">Next Question</button>
+    <button id="nextQT" onclick="LastSlideSave()">Start Part 4</button>
+  </div>
+  <div id="results"></div>
+
+</body>
+
+</html>
