@@ -12,3 +12,9 @@ I researched different types of existing cognitive exercises and implemented the
 - working memory
 
 This version of the program is a first test prototype that includes short samples of known tests (Raven Matrices, GMat, WMAS IV, WAIS IV). 
+
+![alt text](https://github.com/carodak/CognitiveAbilityTests/blob/main/Pictures/serie1.png)
+![alt text](https://github.com/carodak/CognitiveAbilityTests/blob/main/Pictures/serie2.png)
+![alt text](https://github.com/carodak/CognitiveAbilityTests/blob/main/Pictures/serie3.png)
+![alt text](https://github.com/carodak/CognitiveAbilityTests/blob/main/Pictures/serie4.png)
+![alt text](https://github.com/carodak/CognitiveAbilityTests/blob/main/Pictures/serie5.png)
